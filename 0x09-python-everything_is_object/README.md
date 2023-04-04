@@ -1,6 +1,6 @@
-Python - Everything is object
+# Python - Everything is object
 
-This project is 99.9% quizes with almost no writable code. I learnt so many stuff by brainstorming with my peers the following:
+## This project is 99.9% quizes with almost no writable code. I learnt so many stuff by brainstorming with my peers the following:
 
 * Why Python programming is awesome
 * What is an object
