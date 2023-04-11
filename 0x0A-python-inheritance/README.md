@@ -1,4 +1,4 @@
-0x0A. Python - Inheritance
+## 0x0A. Python - Inheritance
 
 As I am diving deeper in Object Oriented Programming (OOP) with python, this project introduce me to the concept of inheritance
 
@@ -10,7 +10,7 @@ Use isinstance() to check an instance’s type: isinstance(obj, int) will be Tru
 
 Use issubclass() to check class inheritance: issubclass(bool, int) is True since bool is a subclass of int. However, issubclass(float, int) is False since float is not a subclass of int.
 
-In this project, I learnt:
+# In this project, I learnt:
 
 * Why Python programming is awesome
 * What is a superclass, baseclass or parentclass
@@ -25,7 +25,7 @@ In this project, I learnt:
 * What is the purpose of inheritance
 * What are, when and how to use isinstance, issubclass, type and super built-in functions
 
-Resources
+# Resources
 
 * python documentation
 * analyticsvidhya.com
