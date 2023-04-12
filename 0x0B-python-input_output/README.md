@@ -19,7 +19,7 @@
 
 * -Python Documentation
 
-<B* Book
+* Book
 * Youtube
 * realpython.com
 * JSON Serialization/Deserialization
