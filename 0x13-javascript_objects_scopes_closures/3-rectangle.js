@@ -1,23 +1,19 @@
 #!/usr/bin/node
-// Script class Rectangle that defines a rectangle
-
-const Rectangle = class Rectangle {
+class Rectangle {
   constructor (w, h) {
+    w = parseInt(w);
+    h = parseInt(h);
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
   }
+
   print () {
-    let prints = '';
-    for (let cont1 = 0; cont1 < this.height; cont1++) {
-      for (let cont = 0; cont < this.width; cont++) {
-        prints = prints + 'X';
-      }
-      console.log(prints);
-      prints = '';
+    while (this.height) {
+      console.log('X'.repeat(this.width));
+      this.height--;
     }
   }
-};
-
+}
 module.exports = Rectangle;
