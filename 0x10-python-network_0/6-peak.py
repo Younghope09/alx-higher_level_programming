@@ -1,28 +1,24 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """
-   this function finds a peak in a list of unsorted integers
+Peak Module
 """
 
 
-def find_peak(numbr):
-    '''
-        Finds the peak in a list of numbers
-    '''
-    length = len(numbr)
-    if length == 0:
+def divide(array, low, high):
+    """divide and conquer"""
+
+    mid = int((high + low)/2)
+    if array[mid-1] <= array[mid] >= array[mid+1]:
+        return array[mid]
+    elif array[mid] > array[mid+1]:
+        return divide(array, low, mid-1)
+    elif array[mid] < array[mid+1]:
+        return divide(array, mid+1, high)
+
+
+def find_peak(list_of_integers):
+    """Find peak of a list"""
+
+    if not list_of_integers:
         return None
-    if length == 1:
-        return (numbr[0])
-    if length == 2:
-        return numbr[0] if numbr[0] >= numbr[1] else numbr[1]
-
-    for idx in range(0, length):
-        value = numbr[idx]
-        if (idx > 0 and idx < length - 1 and
-                numbr[idx + 1] <= value and numbr[idx - 1] <= value):
-                return value
-        elif idx == 0 and numbr[idx + 1] <= value:
-            return value
-        elif idx == length - 1 and numbr[idx - 1] <= value:
-            return value
-    return pick
+    return divide(list_of_integers, 0, len(list_of_integers)-1)
